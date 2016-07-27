@@ -9,12 +9,18 @@
 html, body {
 	margin: 0 auto;
 	overflow-x: hidden;
-	max-width: 100%;
+	max-width: 100%;	
 }
 
 section {
 	display: block;
-	margin-top: 1em;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	width: 75%;
+}
+
+section h2 {
+	margin-bottom: 1em;
 }
 
 h1 {
@@ -88,7 +94,7 @@ header {
 nav { 
 	display: block;
 	float: right;	
-	margin-right: 4em;
+	margin-right: 2.5em;
 
 } 
 
@@ -101,16 +107,30 @@ a.navLink {
 --------------------------------------------*/
 
 .landing {
-	display: table;
 	margin: auto;
 	width: 75%;
 	height: 100%;
+}
+
+#bgIndex {
+	background: url('imgs/koi-landing.jpg') no-repeat 50% 60%;
+	background-size: cover;
+}
+
+#bgProject1 {
+	width: 100%;
+	background: url('imgs/koi-landing.jpg') no-repeat 50% 60%;
+	background-size: cover;
+}
+
+#bgProject2 {
+	width: 100%;
 	background: url('imgs/koi-landing.jpg') no-repeat 50% 60%;
 	background-size: cover;
 }
 
 .content {
-	padding: 14em;
+	padding: 15em;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -118,10 +138,15 @@ a.navLink {
 /* WORK
 --------------------------------------------*/
 
-.work {
-	max-width: 75%;
+.project {
+	border: 1px solid red; 
+	margin-right: 0.5rem;
 }
 
+#h2-work {
+	text-align: center;
+	text-transform: uppercase;
+}
 
 
 /* Media Queries
@@ -132,25 +157,30 @@ a.navLink {
 	 .content { 
 		padding: 10em;
 	}	
+
+	.logo {
+		margin-left: 3.2rem;
+	}
+
+	nav {
+		margin-right: 1rem;
+	}
 }
 
 /* ~992px */
 @media only screen and (max-width: 62em) {
-	 .content { 
-		padding: 10em;
-	}	
 
-	/*work {
-		max-width: 80%;
-	}*/
 }
 
-/* ~688px */
-@media only screen and (max-width: 43em) {
+/* ~768px */
+@media only screen and (max-width: 48em) {
 	#top, #bottom, #right, #left {
 		visibility: hidden;
 	}	
 
+	h1 {
+		font-size: 3em !important;
+	}
 
 	.logo { 
 		margin-left: 2rem;
@@ -168,12 +198,21 @@ a.navLink {
 		margin-right: 0.7rem;
 	}
 
-	.content {
-		padding: 7em;
+	section {
+		width: 90%;
 	}
 
-	h1 {
-		font-size: 3em !important;
+	.landing {
+		width: 90%;
+	}
+
+	.content {
+		padding: 8em;
+	}
+
+
+	.project {
+		margin-bottom: 2rem;
 	}
 
 }
