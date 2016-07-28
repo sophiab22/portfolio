@@ -12,6 +12,16 @@ html, body {
 	max-width: 100%;	
 }
 
+
+footer {
+	width: 75%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 2rem;
+	background-color: #eee;
+	text-align: center;
+}
+
 section {
 	display: block;
 	margin-top: 2em;
@@ -28,15 +38,10 @@ h1 {
 	font-size: 4em !important;
 }
 
-footer {
-	width: 75%;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	padding: 2rem;
-	background-color: #eee;
-	text-align: center;
-}
 
+img {
+	max-width: 100%;
+}
 
 
 
@@ -87,17 +92,13 @@ footer {
 --------------------------------------------*/
 
 header { 
-	transition: height 0.25s, box-shadow 0.25s, background-color 0.125s;
-	position: fixed;
-	z-index: 10;
 	width: 100%;
-	background-color: transparent;
 	background-color: white;
 }
 
 nav, .logo {
 	margin-top: 2.5rem;
-	margin-bottom: 2rem;
+	margin-bottom: -1.5rem;
 }
 
 nav { 
@@ -132,7 +133,7 @@ a.navLink {
 }
 
 #bgProject1 {
-	background: url('imgs/koi-landing.jpg') no-repeat 50% 60%;
+	background: url('imgs/daretostream-bg1.jpg') no-repeat 50% 40%;
 	background-size: cover;
 }
 
@@ -142,13 +143,13 @@ a.navLink {
 }
 
 .content {
-	padding: 18em;
+	padding: 17.5em;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 3rem;
 }
 
-/* WORK
+/* WORK (index.html)
 --------------------------------------------*/
 .projects-wrapper {
 	margin-top: 5rem;
@@ -159,10 +160,29 @@ a.navLink {
 	margin-right: 0.5rem;
 }
 
-#h3-work {
+#center {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+/* PROJECTS
+--------------------------------------------*/
+
+.project-description {
+	line-height: 3.5rem;
+	width: 75%;
+	margin-left: 0;
+	margin-bottom: 2em;
+}
+
+.meta-style {
+	display: block;
+	max-width: 50%;
+	border: 1px solid #eee;
+	padding: 1rem 0; 
+	line-height: 2.5rem;
+}
+
 
 /* Media Queries
 --------------------------------------------*/
@@ -180,11 +200,18 @@ a.navLink {
 	nav {
 		margin-right: 1rem;
 	}
+
+	.project-description {
+		margin-left: 0;
+		width: 83%;
+	}
 }
 
 /* ~992px */
 @media only screen and (max-width: 62em) {
-
+	 .meta-style, .meta {
+	 	max-width: 100%;
+	 }
 }
 
 /* ~768px */
@@ -193,11 +220,11 @@ a.navLink {
 		visibility: hidden;
 	}
 
-	section {
+	footer {
 		width: 90%;
 	}
 
-	footer {
+	section {
 		width: 90%;
 	}
 
@@ -221,14 +248,16 @@ a.navLink {
 	 	font-size: 2rem ;
 	 }
 
-
-
-	/*.content {
+	.content {
 		padding: 8em;
-	}*/
+	}
 
 	.project {
 		margin-bottom: 2rem;
+	}
+
+	.project-description, .meta-style, .meta {
+		max-width: 100%;
 	}
 
 }
