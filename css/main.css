@@ -12,10 +12,9 @@ html, body {
 	max-width: 100%;	
 }
 
-
 footer {
-	width: 75%;
-	margin-top: 2rem;
+	width: 100%;
+	margin-top: 10rem;
 	margin-bottom: 2rem;
 	padding: 2rem;
 	background-color: #eee;
@@ -39,55 +38,6 @@ h1 {
 }
 
 
-img {
-	max-width: 100%;
-}
-
-
-
-/* FIXED ELEMENTS
---------------------------------------------*/
-
-#top {
-	top: 0;
-}
-
-#bottom {
-	bottom: 0;
-}
-
-#top, #bottom {
-	height: 1.5rem;
-	position: fixed;
-	left: 1.5rem;
-	right: 1.5rem;
-	display: block;
-	background-color: #1e1e1e;
-	z-index: 300;
-}
-
-#left {
-	left: 0;
-	bottom: 0;
-	top: 0;
-	width: 1.5rem;
-	position: fixed;
-	display: block;
-	background-color: #1e1e1e;
-	z-index: 300;
-}
-
-#right {
-	right: 0;
-	width: 1.5rem;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	display: block;
-	background-color: #1e1e1e;
-	z-index: 20;
-}
-
 /* HEADER + NAVIGATION
 --------------------------------------------*/
 
@@ -98,7 +48,7 @@ header {
 
 nav, .logo {
 	margin-top: 2.5rem;
-	margin-bottom: -1.5rem;
+	margin-bottom: 2rem;
 }
 
 nav { 
@@ -114,6 +64,8 @@ a.navLink {
 .logo {
 	display: block;
 	margin-left: 4em;
+	letter-spacing: 0.15rem;
+	text-transform: uppercase;
 }
 
 
@@ -128,22 +80,24 @@ a.navLink {
 }
 
 #bgIndex {
-	background: url('imgs/koi-landing.jpg') no-repeat 50% 60%;
+	padding: 8em;
+	background: url('imgs/index-bg.png') no-repeat 50% 75%;
 	background-size: cover;
 }
 
 #bgProject1 {
+	padding: 15em;
 	background: url('imgs/daretostream-bg1.jpg') no-repeat 50% 40%;
 	background-size: cover;
 }
 
 #bgProject2 {
-	background: url('imgs/koi-landing.jpg') no-repeat 50% 60%;
+	padding: 11em;
+	background: url('imgs/2lend-bg2.png') no-repeat 50% 25%;
 	background-size: cover;
 }
 
 .content {
-	padding: 17.5em;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 3rem;
@@ -156,17 +110,67 @@ a.navLink {
 }
 
 .project {
-	border: 1px solid red; 
+	/*border: 1px solid black; */
 	margin-right: 0.5rem;
 }
 
-#center {
+#project-heading {
 	text-align: center;
 	text-transform: uppercase;
 }
 
+/* IMAGES (index.html)
+--------------------------------------------*/
+
+img {
+	max-width: 100%;
+}
+
+figcaption {
+	visibility: hidden;
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	z-index: 500;
+	color: #fff;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+figure:hover figcaption {
+	visibility: visible;
+}
+
+.tint {
+	position: relative;
+	cursor: pointer;
+	box-shadow: rgba(0,0,0,.2) 3px 3px 5px;
+}
+
+.tint:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+ 	bottom: 0;
+  	left: 0;
+  	right: 0;
+	background: none;
+	transition: all .3s linear;
+}
+
+.tint:hover:before { 
+	background: rgba(80, 154, 186, 0.87); 
+}
+
+
+
 /* PROJECTS
 --------------------------------------------*/
+
+#heading-2lend {
+	color: #fff;
+}
 
 .project-description {
 	line-height: 3.5rem;
@@ -177,21 +181,56 @@ a.navLink {
 
 .meta-style {
 	display: block;
-	max-width: 50%;
-	border: 1px solid #eee;
+	max-width: 100%;
 	padding: 1rem 0; 
 	line-height: 2.5rem;
 }
 
+.meta {
+	max-width: 100%;
+}
+
+.process-wrapper {
+	margin: 0;
+	max-width: 80%;
+	line-height: 1.8em;
+}
+
+.process-img-wrapper {
+	background-color: #e0f1ff;
+	max-width: 100%;
+	margin: 2rem 0;
+}
+
+.process-imgs {
+	padding: 2rem;
+}
+
+.img-caption {
+	visibility: visible;
+	position: relative;
+	top: 0rem;
+	color: black;
+	padding-top: 1.5rem;
+	padding-bottom: 0.5rem;
+}
 
 /* Media Queries
 --------------------------------------------*/
 
 /* ~1200px */
 @media only screen and (max-width: 75em) {
-	 .content { 
-		padding: 10em;
+	 #bgIndex { 
+		padding: 5em;
 	}	
+
+	#bgProject1 {
+		padding: 10em;
+	}
+
+	#bgProject2 {
+		padding: 10em;
+	}
 
 	.logo {
 		margin-left: 3.2rem;
@@ -205,6 +244,8 @@ a.navLink {
 		margin-left: 0;
 		width: 83%;
 	}
+
+
 }
 
 /* ~992px */
@@ -229,7 +270,11 @@ a.navLink {
 	}
 
 	h1 {
-		font-size: 3em !important;
+		font-size: 2.5em !important;
+	}
+
+	h2 {
+		font-size: 1.5em !important;
 	}
 
 	nav {
@@ -248,16 +293,37 @@ a.navLink {
 	 	font-size: 2rem ;
 	 }
 
-	.content {
+	#bgIndex {
+		padding: 5em;
+	}
+
+	#bgProject1 {
 		padding: 8em;
+	}
+
+	#bgProject2 {
+		padding: 2em;
 	}
 
 	.project {
 		margin-bottom: 2rem;
 	}
 
-	.project-description, .meta-style, .meta {
+	.project-description, .meta-style, .meta, .process-wrapper {
 		max-width: 100%;
+	}
+
+	.process-imgs { 
+		padding: 1em;
+	}
+
+	.img-caption{
+		margin: 0;
+		top: 0;
+	}
+
+	#heading-2lend {
+		margin-left: 6rem;
 	}
 
 }
