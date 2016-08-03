@@ -160,7 +160,7 @@ a.navLink {
 	/*background-color: #eee;*/
 }
 
-.text-wrapper {
+#about-wrapper {
 	margin-top: 2rem;
 }
 
@@ -205,7 +205,7 @@ a.navLink {
 
 /* CONTACT SECTION (index.html)
 
-Code adapted from Trevor L.J.M. MacIntire:
+Code source adapted from Trevor L.J.M. MacIntire:
 http://codepen.io/uplusion23/pen/xOJkjE
 --------------------------------------------*/
 
@@ -277,7 +277,8 @@ input:focus ~ label, input:valid ~ label, textarea:focus ~ label		{
 }
 
 /* 
-Code from Eric Rasch: 
+Line through text (.no-span)
+Code source from Eric Rasch: 
 https://codepen.io/ericrasch/pen/Irlpm
 */
 
@@ -297,6 +298,13 @@ https://codepen.io/ericrasch/pen/Irlpm
     &:after { left: 1.5%; }
 
 }
+
+.socialMedia-wrapper {
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+
 
 
 /* IMAGES (index.html)
