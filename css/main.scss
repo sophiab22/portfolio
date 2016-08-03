@@ -1,0 +1,506 @@
+/* GLOBAL ELEMENTS 
+--------------------------------------------*/
+
+@font-face {
+	font-family: 'WorkSans-Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('fonts/woff2/WorkSans-Regular.woff2') format('woff2'), 
+		 url('fonts/woff/WorkSans-Regular.woff') format('woff'),
+		 url('fonts/ttf/WorkSans-Regular.ttf') format('truetype');
+} 
+
+@font-face {
+	font-family: 'WorkSans-Bold';
+	font-weight: bold;
+	font-style: normal;
+	src: url('fonts/woff2/WorkSans-Bold.woff2') format('woff2'), 
+		 url('fonts/woff/WorkSans-Bold.woff') format('woff'),
+		 url('fonts/ttf/WorkSans-Bold.ttf') format('truetype');
+} 
+
+$bold-font: WorkSans-Bold, sans-serif;
+$regular-font: WorkSans-Regular, sans-serif;
+$primary-color: #EFC1B4;
+$body-color: #606060;
+$hover-color: #627ABE;
+$hover-text-color: #fff;
+
+* {
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+}
+
+html, body {
+	font: 100% $regular-font !important;
+	margin: 0 auto;
+	overflow-x: hidden;
+	max-width: 100%;	
+}
+	
+footer {
+	width: 100%;
+	margin-top: 10rem;
+	margin-bottom: 2rem;
+	padding: 2rem;
+	background-color: #eee;
+	text-align: center;
+}
+
+section {
+	display: block;
+	max-width: 100%;
+}
+
+section h2 {
+	margin-bottom: 1em;
+}
+
+h1 {
+	font: 100% $bold-font; 
+	font-size: 3rem !important;
+	text-transform: uppercase;
+	text-align: justify;
+	letter-spacing: 0.5rem;
+}
+
+h2 { 
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+p {
+	font: 100% $regular-font;
+	max-width: 90%;
+	line-height: 1.5rem;
+	font-size: 0.9rem;
+}
+
+
+/* HEADER + NAVIGATION
+--------------------------------------------*/
+
+header { 
+	width: 100%;
+	background-color: $primary-color;
+
+}
+
+nav, .logo {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+nav { 
+	display: block;
+	float: right;	
+	margin-right: 2.5em;
+	font-size: 1rem;
+} 
+
+a.navLink {
+	margin-right: 2rem;
+}
+
+.logo {
+	font: 100% $bold-font;
+	font-size: 0.5em;
+	display: block;
+	letter-spacing: 0.15rem;
+	text-transform: uppercase;
+}
+
+
+/* LANDING 
+--------------------------------------------*/
+
+.landing {
+	margin: 0 auto;
+	height: 15rem;
+	width: 100%;
+	/*background-color: #B0DEDC;*/
+}
+
+.intro-img {
+	max-width: 42%;
+}
+
+/*#bgIndex {
+	padding: 8em;
+	background: url('imgs/index-bg.png') no-repeat 50% 75%;
+	background-size: cover;
+}*/
+
+#bgProject1 {
+	padding: 15em;
+	background: url('imgs/daretostream-bg1.jpg') no-repeat 50% 40%;
+	background-size: cover;
+}
+
+#bgProject2 {
+	padding: 11em;
+	background: url('imgs/2lend-bg2.png') no-repeat 50% 25%;
+	background-size: cover;
+}
+
+/*.content {
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 3rem;
+}*/
+
+
+/* WORK + ABOUT SECTIONS (index.html)
+--------------------------------------------*/
+
+#work, #about {
+	margin: 0 auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	/*background-color: #eee;*/
+}
+
+.text-wrapper {
+	margin-top: 2rem;
+}
+
+.wrapper {
+	margin-top: 10%;
+	margin-bottom: 5%;
+	max-width: 90%;
+	color: $body-color;
+}
+
+.heading {
+	background-color: $primary-color;
+	font: 100% $bold-font;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #fff;
+	letter-spacing: 0.25rem;
+	padding-left: 2rem;
+}
+
+.project {
+	margin-right: 0.5rem;
+	font: 100% $bold-font;
+}
+
+.project a {
+	text-decoration: none;
+	color: $body-color;
+}
+
+.project a:hover {
+	text-decoration: none;
+	/*color: $hover-color;*/
+}
+
+.img-wrapper {
+	margin-left: 3rem;
+	max-width: 60%;
+	float: left;
+}
+
+
+/* CONTACT SECTION (index.html)
+
+Code adapted from Trevor L.J.M. MacIntire:
+http://codepen.io/uplusion23/pen/xOJkjE
+--------------------------------------------*/
+
+.group { 
+  position: relative; 
+  margin-bottom: 4rem; 
+}
+
+textarea {
+	outline: none !important;
+	resize: none !important;
+}
+
+input, textarea {
+  padding-top: 2rem;
+  display: block;
+  width: 90%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $body-color;
+  color: $body-color;
+  background: rgba(0,0,0,0);
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  opacity: 1;
+}
+
+label {
+  color: $body-color; 
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 0.5rem;
+  top: 1rem;
+  opacity: 0.5;
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label, textarea:focus ~ label		{
+  top: -10px;
+  font-size: 1rem;
+  color: #B1B1B1;
+  opacity: 1;
+}
+
+.send-btn {
+	font: 100% $bold-font;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+	border: 1px solid;
+	padding: 1rem 2rem;
+}
+
+
+.send-btn:hover {
+	text-decoration: none;
+	background-color: $hover-color;
+	color: $hover-text-color;
+	-webkit-transition: background-color 0.9s;
+	transition: background-color 0.9s;
+}
+
+/* 
+Code from Eric Rasch: 
+https://codepen.io/ericrasch/pen/Irlpm
+*/
+
+.no-span {
+    display: table;
+    white-space: nowrap;
+    text-transform: uppercase;
+    &:before, &:after {
+      border-top: 1px solid $primary-color;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 45%;
+    }
+    &:before { right: 1.5%; }
+    &:after { left: 1.5%; }
+
+}
+
+
+/* IMAGES (index.html)
+--------------------------------------------*/
+
+img {
+	max-width: 100%;
+}
+
+figcaption {
+	visibility: hidden;
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	z-index: 500;
+	color: #fff;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+figure:hover figcaption {
+	visibility: visible;
+}
+
+.tint {
+	position: relative;
+	cursor: pointer;
+	/*box-shadow: rgba(0,0,0,.2) 3px 3px 5px;*/
+}
+
+.tint:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+ 	bottom: 0;
+  	left: 0;
+  	right: 0;
+	background: none;
+	transition: all .3s linear;
+}
+
+.tint:hover:before { 
+	background: rgba(80, 154, 186, 0.87); 
+}
+
+
+
+/* PROJECTS
+--------------------------------------------*/
+
+#heading-2lend {
+	color: #fff;
+}
+
+.blurb {
+	line-height: 3.5rem;
+	width: 75%;
+	margin-left: 0;
+	margin-bottom: 2em;
+}
+
+.meta-style {
+	display: block;
+	max-width: 100%;
+	padding: 1rem 0; 
+	line-height: 2.5rem;
+}
+
+.meta {
+	max-width: 100%;
+}
+
+.process-wrapper {
+	margin: 0;
+	max-width: 80%;
+	line-height: 1.8em;
+}
+
+.process-img-wrapper {
+	background-color: #e0f1ff;
+	max-width: 100%;
+	margin: 2rem 0;
+}
+
+.process-imgs {
+	padding: 2rem;
+}
+
+.img-caption {
+	visibility: visible;
+	position: relative;
+	top: 0rem;
+	color: black;
+	padding-top: 1.5rem;
+	padding-bottom: 0.5rem;
+}
+
+
+/* MEDIA QUERIES
+--------------------------------------------*/
+
+/* ~1200px */
+@media only screen and (max-width: 75em) {
+	 /*#bgIndex { 
+		padding: 5em;
+	}*/	
+
+	#bgProject1 {
+		padding: 10em;
+	}
+
+	#bgProject2 {
+		padding: 10em;
+	}
+
+	.logo {
+		margin-left: 3.2rem;
+	}
+
+	nav {
+		margin-right: 1rem;
+	}
+
+	.blurb {
+		margin-left: 0;
+		width: 83%;
+	}
+
+
+}
+
+/* ~992px */
+@media only screen and (max-width: 62em) {
+	 .meta-style, .meta {
+	 	max-width: 100%;
+	 }
+}
+
+/* ~768px */
+@media only screen and (max-width: 48em) {
+	#top, #bottom, #right, #left {
+		visibility: hidden;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+	section {
+		width: 90%;
+	}
+
+	h1 {
+		font-size: 2.5em !important;
+	}
+
+	nav {
+		margin-right: 1.5rem;
+	}
+
+	a.navLink{
+		margin-right: 0.7rem;
+	}
+
+	.logo { 
+		margin-left: 2rem;
+	 }
+
+	.logo h4 {
+	 	font-size: 1.5rem ;
+	 }
+
+/*	#bgIndex {
+		padding: 5em;
+	}*/
+
+	#bgProject1 {
+		padding: 8em;
+	}
+
+	#bgProject2 {
+		padding: 8em;
+	}
+
+	.project {
+		margin-bottom: 2rem;
+	}
+
+	.project-description, .meta-style, .meta, .process-wrapper {
+		max-width: 100%;
+	}
+
+	.process-imgs { 
+		padding: 1em;
+	}
+
+	.img-caption{
+		margin: 0;
+		top: 0;
+	}
+
+	#heading-2lend {
+		margin-left: 6rem;
+	}
+
+}
