@@ -1,6 +1,7 @@
 /* GLOBAL ELEMENTS 
 --------------------------------------------*/
 
+
 @font-face {
 	font-family: 'WorkSans-Regular';
 	font-weight: normal;
@@ -39,12 +40,12 @@ html, body {
 }
 	
 footer {
-	width: 100%;
 	margin-top: 10rem;
-	margin-bottom: 2rem;
-	padding: 2rem;
+	margin-bottom: 6rem;
+	padding: 1.5rem;
 	background-color: #eee;
 	text-align: center;
+	/*margin: 0 auto -1rem;  the bottom margin is the negative value of the footer's height */
 }
 
 section {
@@ -76,30 +77,42 @@ p {
 	font-size: 0.9rem;
 }
 
+a {
+	color: $body-color !important;
+}
+
+a:hover {
+	color: $hover-color !important;
+	text-decoration: none !important;
+}
 
 /* HEADER + NAVIGATION
 --------------------------------------------*/
 
 header { 
 	width: 100%;
-	background-color: $primary-color;
+	/*background-color: $primary-color;*/
 
 }
 
 nav, .logo {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	margin-bottom: 1rem;
 }
 
 nav { 
 	display: block;
 	float: right;	
-	margin-right: 2.5em;
 	font-size: 1rem;
 } 
 
-a.navLink {
+
+a.navLink:first-of-type, a.navLink:nth-of-type(2) {
 	margin-right: 2rem;
+}
+
+a.navLink:hover {
+	text-decoration: underline !important;
 }
 
 .logo {
@@ -125,11 +138,11 @@ a.navLink {
 	max-width: 42%;
 }
 
-/*#bgIndex {
-	padding: 8em;
+#bgIndex {
+	padding: 5em;
 	background: url('imgs/index-bg.png') no-repeat 50% 75%;
 	background-size: cover;
-}*/
+}
 
 #bgProject1 {
 	padding: 15em;
@@ -156,7 +169,7 @@ a.navLink {
 #work, #about {
 	margin: 0 auto;
 	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-bottom: 7%;
 	/*background-color: #eee;*/
 }
 
@@ -205,7 +218,7 @@ a.navLink {
 
 /* CONTACT SECTION (index.html)
 
-Code source adapted from Trevor L.J.M. MacIntire:
+Code adapted from Trevor L.J.M. MacIntire:
 http://codepen.io/uplusion23/pen/xOJkjE
 --------------------------------------------*/
 
@@ -239,12 +252,12 @@ input:focus, textarea:focus {
 
 label {
   color: $body-color; 
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: normal;
   position: absolute;
   pointer-events: none;
-  left: 0.5rem;
-  top: 1rem;
+  left: 0rem;
+  top: 2rem;
   opacity: 0.5;
   transition: 0.2s ease all; 
   -moz-transition: 0.2s ease all; 
@@ -252,15 +265,22 @@ label {
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label, textarea:focus ~ label		{
-  top: -10px;
+input:focus ~ label, input:valid ~ label, 
+textarea:focus ~ label, textarea:valid ~ label {
+  top: -1rem;
   font-size: 1rem;
   color: #B1B1B1;
   opacity: 1;
 }
 
+textarea:focus ~ label {
+	top: -2rem !important;
+}
+
+
 .send-btn {
 	font: 100% $bold-font;
+	color: $hover-color !important;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 	border: 1px solid;
@@ -270,8 +290,8 @@ input:focus ~ label, input:valid ~ label, textarea:focus ~ label		{
 
 .send-btn:hover {
 	text-decoration: none;
-	background-color: $hover-color;
-	color: $hover-text-color;
+	background-color: $hover-color !important;
+	color: $hover-text-color !important;
 	-webkit-transition: background-color 0.9s;
 	transition: background-color 0.9s;
 }
@@ -300,10 +320,17 @@ https://codepen.io/ericrasch/pen/Irlpm
 }
 
 .socialMedia-wrapper {
+	margin: 0 auto;
 	margin-top: 2.5rem;
 	margin-bottom: 1rem;
+	display: block;
 }
 
+ul {
+	text-align: justify;
+	line-height: 2rem;
+	list-style-type: none;
+}
 
 
 
