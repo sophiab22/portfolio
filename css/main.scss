@@ -43,7 +43,8 @@ footer {
   margin-top: 10rem;
   margin-bottom: 6rem;
   padding: 1.5rem;
-  background-color: #eee;
+  background-color: $body-color;
+  color: $white-color;
   text-align: center;
   /*margin: 0 auto -1rem;  the bottom margin is the negative value of the footer's height */
 }
@@ -70,7 +71,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
 }
 
 h4 {
@@ -396,7 +397,7 @@ figure:hover figcaption {
 
 
 
-/* PROJECT PAGES
+/* PROJECT PAGES (project1/2/3.html)
 --------------------------------------------*/
 
 .meta-style {
@@ -476,6 +477,11 @@ figure:hover figcaption {
     padding: 10em;
   }
 
+  #about-wrapper {
+    margin: 0rem;
+  }
+
+
 }
 
 /* ~992px */
@@ -483,6 +489,19 @@ figure:hover figcaption {
    .meta-style, .meta {
     max-width: 100%;
    }
+
+  .contact-blurb {
+    margin-top: 3rem;
+  }
+
+
+  .img-wrapper {
+    margin-left: 5rem;
+    max-width: 50%; 
+    margin-bottom: 2rem;
+  }
+
+
 }
 
 /* ~768px */
@@ -536,10 +555,6 @@ figure:hover figcaption {
 
   .form {
     margin-top: -0.5rem; 
-  }
-
-  .contact-blurb {
-    margin-top: 4rem;
   }
 
   .project {

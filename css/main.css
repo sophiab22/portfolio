@@ -6,7 +6,7 @@
 
 html, body { font: 100% WorkSans-Regular, sans-serif !important; margin: 0 auto; overflow-x: hidden; max-width: 100%; }
 
-footer { margin-top: 10rem; margin-bottom: 6rem; padding: 1.5rem; background-color: #eee; text-align: center; /*margin: 0 auto -1rem;  the bottom margin is the negative value of the footer's height */ }
+footer { margin-top: 10rem; margin-bottom: 6rem; padding: 1.5rem; background-color: #606060; color: #fff; text-align: center; /*margin: 0 auto -1rem;  the bottom margin is the negative value of the footer's height */ }
 
 section { display: block; max-width: 100%; }
 
@@ -16,7 +16,7 @@ h1 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 1.2rem !importa
 
 h2 { font: 100% WorkSans-Bold, sans-serif !important; text-transform: uppercase; }
 
-h3 { font-size: 1rem !important; }
+h3 { font-size: 1.2rem !important; }
 
 h4 { font-size: 0.9rem !important; }
 
@@ -130,7 +130,7 @@ figure:hover figcaption { visibility: visible; }
 
 .tint:hover:before { background: rgba(98, 122, 190, 0.9); }
 
-/* PROJECT PAGES
+/* PROJECT PAGES (project1/2/3.html)
 --------------------------------------------*/
 .meta-style { margin: 0; margin-top: 2.5rem; width: 90%; }
 
@@ -155,9 +155,12 @@ figure:hover figcaption { visibility: visible; }
 /* ~1200px */
 @media only screen and (max-width: 75em) { #bgIndex { padding: 2rem 0.8rem; background: url("imgs/index-bg.png") no-repeat 50% 45%; background-size: cover; }
   #bgProject1 { background: url("imgs/daretostream-bg.jpg") no-repeat 50% 45%; background-size: cover; }
-  #bgProject2 { padding: 10em; } }
+  #bgProject2 { padding: 10em; }
+  #about-wrapper { margin: 0rem; } }
 /* ~992px */
-@media only screen and (max-width: 62em) { .meta-style, .meta { max-width: 100%; } }
+@media only screen and (max-width: 62em) { .meta-style, .meta { max-width: 100%; }
+  .contact-blurb { margin-top: 3rem; }
+  .img-wrapper { margin-left: 5rem; max-width: 50%; margin-bottom: 2rem; } }
 /* ~768px */
 @media only screen and (max-width: 48em) { #top, #bottom, #right, #left { visibility: hidden; }
   footer { width: 100%; }
@@ -171,7 +174,6 @@ figure:hover figcaption { visibility: visible; }
   #bgProject2 { padding: 8em; }
   .heading { padding-left: 1rem; font-size: 0.9rem !important; }
   .form { margin-top: -0.5rem; }
-  .contact-blurb { margin-top: 4rem; }
   .project { margin-bottom: 2rem; }
   .project-description, .meta-style, .meta, .process-wrapper { max-width: 100%; }
   .process-imgs { padding: 1em; }
