@@ -24,7 +24,7 @@ $bold-font: WorkSans-Bold, sans-serif;
 $regular-font: WorkSans-Regular, sans-serif;
 $primary-color: #EFC1B4;
 $body-color: #606060;
-$hover-color: #627ABE;
+$accent-color: #627ABE;
 $hover-text-color: #fff;
 
 * {
@@ -58,16 +58,20 @@ section h2 {
 }
 
 h1 {
-	font: 100% $bold-font; 
-	font-size: 3rem !important;
+	font: 100% $bold-font !important; 
+	font-size: 2rem !important;
 	text-transform: uppercase;
 	text-align: justify;
-	letter-spacing: 0.5rem;
+	letter-spacing: 0.25rem;
 }
 
 h2 { 
 	text-transform: uppercase;
 	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.2rem !important;
 }
 
 p {
@@ -77,13 +81,26 @@ p {
 	font-size: 0.9rem;
 }
 
+p a {
+	color: $accent-color !important;
+}
+
+p a:hover {
+	text-decoration: underline !important;
+}
+
 a {
 	color: $body-color !important;
 }
 
 a:hover {
-	color: $hover-color !important;
+	color: $accent-color !important;
 	text-decoration: none !important;
+}
+
+strong {
+	font: 100% $bold-font !important; 
+	text-transform: uppercase;
 }
 
 /* HEADER + NAVIGATION
@@ -118,7 +135,6 @@ a.navLink:hover {
 .logo {
 	font: 100% $bold-font;
 	font-size: 0.5em;
-	display: block;
 	letter-spacing: 0.15rem;
 	text-transform: uppercase;
 }
@@ -206,7 +222,7 @@ a.navLink:hover {
 
 .project a:hover {
 	text-decoration: none;
-	/*color: $hover-color;*/
+	/*color: $accent-color;*/
 }
 
 .img-wrapper {
@@ -255,18 +271,17 @@ label {
   font-size: 1rem;
   font-weight: normal;
   position: absolute;
-  pointer-events: none;
   left: 0rem;
   top: 2rem;
   opacity: 0.5;
-  transition: 0.2s ease all; 
-  -moz-transition: 0.2s ease all; 
+   -moz-transition: 0.2s ease all; 
   -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all; 
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label, 
-textarea:focus ~ label, textarea:valid ~ label {
+input:focus ~ label, 
+textarea:focus ~ label {
   top: -1rem;
   font-size: 1rem;
   color: #B1B1B1;
@@ -280,7 +295,7 @@ textarea:focus ~ label {
 
 .send-btn {
 	font: 100% $bold-font;
-	color: $hover-color !important;
+	color: $accent-color !important;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 	border: 1px solid;
@@ -290,7 +305,7 @@ textarea:focus ~ label {
 
 .send-btn:hover {
 	text-decoration: none;
-	background-color: $hover-color !important;
+	background-color: $accent-color !important;
 	color: $hover-text-color !important;
 	-webkit-transition: background-color 0.9s;
 	transition: background-color 0.9s;
@@ -388,26 +403,21 @@ figure:hover figcaption {
 }
 
 .blurb {
-	line-height: 3.5rem;
-	width: 75%;
+	line-height: 1.9rem;
+	width: 90%;
 	margin-left: 0;
 	margin-bottom: 2em;
 }
 
 .meta-style {
-	display: block;
-	max-width: 100%;
-	padding: 1rem 0; 
-	line-height: 2.5rem;
-}
-
-.meta {
+	margin: 0;
+	margin-top: 2rem;
 	max-width: 100%;
 }
 
 .process-wrapper {
-	margin: 0;
-	max-width: 80%;
+	margin-top: 2rem;
+	max-width: 75%;
 	line-height: 1.8em;
 }
 
@@ -419,6 +429,7 @@ figure:hover figcaption {
 
 .process-imgs {
 	padding: 2rem;
+	width: 75%;
 }
 
 .img-caption {
@@ -504,10 +515,6 @@ figure:hover figcaption {
 	.logo h4 {
 	 	font-size: 1.5rem ;
 	 }
-
-/*	#bgIndex {
-		padding: 5em;
-	}*/
 
 	#bgProject1 {
 		padding: 8em;
