@@ -84,12 +84,12 @@ p {
   font-size: 0.9rem;
 }
 
-p a {
+p a, cite a {
   color: $accent-color !important;
   text-decoration: underline;
 }
 
-p a:hover {
+p a:hover, cite a:hover {
   color: $primary-color !important;
 
 }
@@ -118,6 +118,12 @@ blockquote {
   font-size: 0.95em;
   border-left: 10px solid $accent-color !important;
   margin: 2em 0em;
+}
+
+cite {
+  display: block;
+  line-height: 2rem;
+  margin-left: 3rem;
 }
 
 /* FOOTER
