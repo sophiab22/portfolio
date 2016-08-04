@@ -87,9 +87,11 @@ p {
 p a, cite a {
   color: $accent-color !important;
   text-decoration: underline;
+  font-weight: bold;
 }
 
 p a:hover, cite a:hover {
+  text-decoration: underline !important;
   color: $primary-color !important;
 
 }
@@ -236,8 +238,9 @@ a.navLink:hover {
 
 
 #contact .wrapper {
-  margin-top: 5%;
+  margin-top: 7rem;
 }
+
 
 .heading {
   background-color: $primary-color;
@@ -267,7 +270,6 @@ a.navLink:hover {
   max-width: 60%;
   float: left;
 }
-
 
 /* CONTACT SECTION (index.html)
 
@@ -506,6 +508,10 @@ figure:hover figcaption {
 
   #about-wrapper {
     margin: 0rem;
+  }
+
+  a.navLink:first-of-type, a.navLink:nth-of-type(2) {
+    margin-right: 1rem;
   }
 
 
