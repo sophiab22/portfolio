@@ -25,7 +25,7 @@ $primary-color: #EFC1B4;
 $body-color: #606060;
 $accent-color: #627ABE;
 $accent-hover: rgba(98, 122, 190, 0.9);
-$hover-text-color: #fff;
+$white-color: #fff;
 
 * {
   margin: 0 auto;
@@ -67,8 +67,6 @@ h1 {
 h2 { 
   font: 100% $bold-font !important;
   text-transform: uppercase;
-  font-size: 1.2em;
-  color: $primary-color;
 }
 
 h3 {
@@ -81,7 +79,7 @@ h4 {
 
 p {
   font: 100% $regular-font;
-  max-width: 90%;
+  max-width: 93%;
   line-height: 1.5rem;
   font-size: 0.9rem;
 }
@@ -113,7 +111,7 @@ strong {
 
 header { 
   width: 100%;
-  /*background-color: $primary-color;*/
+  color: $primary-color;
 
 }
 
@@ -211,7 +209,7 @@ a.navLink:hover {
 .heading {
   background-color: $primary-color;
   text-transform: uppercase;
-  color: #fff;
+  color: #fff !important;
   letter-spacing: 0.25rem;
   padding: 0.25rem 2rem;
 }
@@ -239,6 +237,7 @@ a.navLink:hover {
 
 
 /* CONTACT SECTION (index.html)
+
 Code adapted from Trevor L.J.M. MacIntire:
 http://codepen.io/uplusion23/pen/xOJkjE
 --------------------------------------------*/
@@ -309,7 +308,7 @@ textarea:focus ~ label {
 .send-btn:hover {
   text-decoration: none;
   background-color: $accent-color !important;
-  color: $hover-text-color !important;
+  color: $white-color !important;
   -webkit-transition: background-color 0.9s;
   transition: background-color 0.9s;
 }
@@ -400,12 +399,10 @@ figure:hover figcaption {
 /* PROJECT PAGES
 --------------------------------------------*/
 
-
-.blurb {
-  line-height: 1.9rem;
+.meta-style {
+  margin: 0;
+  margin-top: 2.5rem;
   width: 90%;
-  margin-left: 0;
-  margin-bottom: 2em;
 }
 
 .meta-style {
@@ -479,12 +476,6 @@ figure:hover figcaption {
     padding: 10em;
   }
 
-  .blurb {
-    margin-left: 0;
-    width: 83%;
-  }
-
-
 }
 
 /* ~992px */
@@ -505,7 +496,7 @@ figure:hover figcaption {
   }
 
   section {
-    width: 90%;
+    width: 100%;
   }
 
   h1 {

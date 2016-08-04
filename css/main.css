@@ -14,13 +14,13 @@ section h2 { margin-bottom: 1em; }
 
 h1 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 1.2rem !important; text-transform: uppercase; letter-spacing: 0.25rem; }
 
-h2 { font: 100% WorkSans-Bold, sans-serif !important; text-transform: uppercase; font-size: 1.2em; color: #EFC1B4; }
+h2 { font: 100% WorkSans-Bold, sans-serif !important; text-transform: uppercase; }
 
 h3 { font-size: 1rem !important; }
 
 h4 { font-size: 0.9rem !important; }
 
-p { font: 100% WorkSans-Regular, sans-serif; max-width: 90%; line-height: 1.5rem; font-size: 0.9rem; }
+p { font: 100% WorkSans-Regular, sans-serif; max-width: 93%; line-height: 1.5rem; font-size: 0.9rem; }
 
 p a { color: #627ABE !important; }
 
@@ -34,7 +34,7 @@ strong { font: 100% WorkSans-Bold, sans-serif !important; text-transform: upperc
 
 /* HEADER + NAVIGATION
 --------------------------------------------*/
-header { width: 100%; /*background-color: $primary-color;*/ }
+header { width: 100%; color: #EFC1B4; }
 
 nav, .logo { margin-top: 2rem; margin-bottom: 1rem; }
 
@@ -70,7 +70,7 @@ a.navLink:hover { text-decoration: underline !important; }
 
 .wrapper { margin-top: 10%; margin-bottom: 3%; max-width: 90%; color: #606060; }
 
-.heading { background-color: #EFC1B4; text-transform: uppercase; color: #fff; letter-spacing: 0.25rem; padding: 0.25rem 2rem; }
+.heading { background-color: #EFC1B4; text-transform: uppercase; color: #fff !important; letter-spacing: 0.25rem; padding: 0.25rem 2rem; }
 
 .project { margin-right: 0.5rem; font: 100% WorkSans-Bold, sans-serif; }
 
@@ -81,6 +81,7 @@ a.navLink:hover { text-decoration: underline !important; }
 .img-wrapper { margin-left: 3rem; max-width: 60%; float: left; }
 
 /* CONTACT SECTION (index.html)
+
 Code adapted from Trevor L.J.M. MacIntire:
 http://codepen.io/uplusion23/pen/xOJkjE
 --------------------------------------------*/
@@ -131,7 +132,7 @@ figure:hover figcaption { visibility: visible; }
 
 /* PROJECT PAGES
 --------------------------------------------*/
-.blurb { line-height: 1.9rem; width: 90%; margin-left: 0; margin-bottom: 2em; }
+.meta-style { margin: 0; margin-top: 2.5rem; width: 90%; }
 
 .meta-style { margin: 0; margin-top: 2rem; width: 100%; }
 
@@ -154,14 +155,13 @@ figure:hover figcaption { visibility: visible; }
 /* ~1200px */
 @media only screen and (max-width: 75em) { #bgIndex { padding: 2rem 0.8rem; background: url("imgs/index-bg.png") no-repeat 50% 45%; background-size: cover; }
   #bgProject1 { background: url("imgs/daretostream-bg.jpg") no-repeat 50% 45%; background-size: cover; }
-  #bgProject2 { padding: 10em; }
-  .blurb { margin-left: 0; width: 83%; } }
+  #bgProject2 { padding: 10em; } }
 /* ~992px */
 @media only screen and (max-width: 62em) { .meta-style, .meta { max-width: 100%; } }
 /* ~768px */
 @media only screen and (max-width: 48em) { #top, #bottom, #right, #left { visibility: hidden; }
   footer { width: 100%; }
-  section { width: 90%; }
+  section { width: 100%; }
   h1 { margin: 0 !important; font-size: 0.85rem !important; width: 70%; }
   p { margin-top: 1rem; }
   nav { font-size: 0.85rem; }
