@@ -12,11 +12,21 @@ section { display: block; max-width: 100%; }
 
 section h2 { margin-bottom: 1em; }
 
+<<<<<<< HEAD
 h1 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 2rem !important; text-transform: uppercase; text-align: justify; letter-spacing: 0.25rem; }
 
 h2 { font: 100% WorkSans-Bold, sans-serif !important; text-transform: uppercase; }
 
 h3 { font-size: 1.2rem !important; }
+=======
+h1 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 1.2rem !important; text-transform: uppercase; letter-spacing: 0.25rem; }
+
+h2 { font: 100% WorkSans-Bold, sans-serif !important; text-transform: uppercase; font-size: 1.2em; color: #EFC1B4; }
+
+h3 { font-size: 1rem !important; }
+
+h4 { font-size: 0.9rem !important; }
+>>>>>>> master
 
 p { font: 100% WorkSans-Regular, sans-serif; max-width: 90%; line-height: 1.5rem; font-size: 0.9rem; }
 
@@ -32,7 +42,11 @@ strong { font: 100% WorkSans-Bold, sans-serif !important; text-transform: upperc
 
 /* HEADER + NAVIGATION
 --------------------------------------------*/
+<<<<<<< HEAD
 header { width: 100%; color: #EFC1B4; }
+=======
+header { width: 100%; /*background-color: $primary-color;*/ }
+>>>>>>> master
 
 nav, .logo { margin-top: 2rem; margin-bottom: 1rem; }
 
@@ -42,7 +56,11 @@ a.navLink:first-of-type, a.navLink:nth-of-type(2) { margin-right: 2rem; }
 
 a.navLink:hover { text-decoration: underline !important; }
 
+<<<<<<< HEAD
 .logo, h4 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 0.5em; letter-spacing: 0.15rem; text-transform: uppercase; }
+=======
+.logo, h4 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 0.25em; letter-spacing: 0.15rem; text-transform: uppercase; }
+>>>>>>> master
 
 /* LANDING 
 --------------------------------------------*/
@@ -50,7 +68,13 @@ a.navLink:hover { text-decoration: underline !important; }
 
 .intro-img { max-width: 42%; }
 
+<<<<<<< HEAD
 #bgIndex { padding: 5em; background: url("imgs/index-bg.png") no-repeat 50% 75%; background-size: cover; }
+=======
+#welcome { border-right: 1px solid #606060; }
+
+#bgIndex { padding: 2em; background: url("imgs/index-bg-2.png") no-repeat 50% 45%; background-size: cover; }
+>>>>>>> master
 
 #bgProject1 { padding: 15em; background: url("imgs/daretostream-bg1.jpg") no-repeat 50% 40%; background-size: cover; }
 
@@ -60,6 +84,7 @@ a.navLink:hover { text-decoration: underline !important; }
 
 /* WORK + ABOUT SECTIONS (index.html)
 --------------------------------------------*/
+<<<<<<< HEAD
 #work, #about { margin: 0 auto; margin-top: 10%; margin-bottom: 7%; /*background-color: #eee;*/ }
 
 #about-wrapper { margin-top: 2rem; }
@@ -67,6 +92,15 @@ a.navLink:hover { text-decoration: underline !important; }
 .wrapper { margin-top: 10%; margin-bottom: 5%; max-width: 90%; color: #606060; }
 
 .heading { background-color: #EFC1B4; text-transform: uppercase; color: #fff !important; letter-spacing: 0.25rem; padding: 0.25rem 2rem; }
+=======
+#work, #about { margin: 0 auto; margin-bottom: 7%; /*background-color: #eee;*/ }
+
+#about-wrapper { margin-top: 2rem; }
+
+.wrapper { margin-top: 10%; margin-bottom: 3%; max-width: 90%; color: #606060; }
+
+.heading { background-color: #EFC1B4; text-transform: uppercase; color: #fff; letter-spacing: 0.25rem; padding: 0.25rem 2rem; }
+>>>>>>> master
 
 .project { margin-right: 0.5rem; font: 100% WorkSans-Bold, sans-serif; }
 
@@ -83,18 +117,29 @@ http://codepen.io/uplusion23/pen/xOJkjE
 --------------------------------------------*/
 .group { position: relative; margin-bottom: 4rem; }
 
+<<<<<<< HEAD
 textarea { outline: none !important; resize: none !important; }
+=======
+textarea { outline: none !important; resize: none !important; margin-top: 4rem; }
+>>>>>>> master
 
 input, textarea { padding-top: 2rem; display: block; width: 90%; border: none; outline: none; border-bottom: 1px solid #606060; color: #606060; background: transparent; opacity: 0.5; transition: 0.2s ease; }
 
 input:focus, textarea:focus { outline: none; opacity: 1; }
 
+<<<<<<< HEAD
 label { color: #606060; font-size: 1rem; font-weight: normal; position: absolute; left: 0rem; top: 2rem; opacity: 0.5; transition: 0.2s ease all; }
 
 /* active state */
 input:focus ~ label, textarea:focus ~ label { top: -1rem; font-size: 1rem; color: #B1B1B1; opacity: 1; }
 
 textarea:focus ~ label { top: -2rem !important; }
+=======
+label { color: #606060; font-size: 1rem; font-weight: normal; position: absolute; left: 0rem; top: 0.5rem; opacity: 0.5; transition: 0.2s ease all; }
+
+/* active state */
+input:focus ~ label, textarea:focus ~ label { top: -2rem; font-size: 1rem; color: #B1B1B1; opacity: 1; }
+>>>>>>> master
 
 .send-btn { font: 100% WorkSans-Bold, sans-serif; color: #627ABE !important; text-transform: uppercase; letter-spacing: .25rem; border: 1px solid; padding: 1rem 2rem; }
 
@@ -122,6 +167,7 @@ figcaption { visibility: hidden; position: absolute; top: 8em; left: 1em; z-inde
 
 figure:hover figcaption { visibility: visible; }
 
+<<<<<<< HEAD
 .tint { position: relative; cursor: pointer; /*box-shadow: rgba(0,0,0,.2) 3px 3px 5px;*/ }
 
 .tint:before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: none; transition: all .3s linear; }
@@ -135,21 +181,51 @@ figure:hover figcaption { visibility: visible; }
 .meta-p { font-size: 0.8rem !important; }
 
 .process-wrapper { margin-top: 2rem; max-width: 75%; line-height: 1.8em; }
+=======
+.tint { position: relative; cursor: pointer; }
+
+.tint:before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: none; transition: all .3s linear; }
+
+.tint:hover:before { background: rgba(98, 122, 190, 0.9); }
+
+/* PROJECT PAGES
+--------------------------------------------*/
+.blurb { line-height: 1.9rem; width: 90%; margin-left: 0; margin-bottom: 2em; }
+
+.meta-style { margin: 0; margin-top: 2rem; width: 100%; }
+
+.meta-p { font-size: 0.8rem !important; }
+
+.process-wrapper { margin: 2.5rem 0; max-width: 75%; line-height: 1.8em; }
+>>>>>>> master
 
 .process-img-wrapper { background-color: #e0f1ff; max-width: 100%; margin: 2rem 0; }
 
 .process-imgs { padding: 2rem; width: 75%; }
 
 .img-caption { visibility: visible; position: relative; top: 0rem; color: black; padding-top: 1.5rem; padding-bottom: 0.5rem; }
+<<<<<<< HEAD
+=======
+
+.process-wrapper h3 { margin: 2rem 0 !important; }
+
+.bg-heading { position: absolute; margin: 0 auto; margin-left: 22%; color: #fff; font: 100% WorkSans-Regular, sans-serif !important; font-size: 2rem !important; }
+>>>>>>> master
 
 /* MEDIA QUERIES
 --------------------------------------------*/
 /* ~1200px */
+<<<<<<< HEAD
 @media only screen and (max-width: 75em) {  /*#bgIndex {  padding: 5em;
 }*/
   #bgProject1 { padding: 10em; }
   #bgProject2 { padding: 10em; }
   nav { margin-right: 1rem; }
+=======
+@media only screen and (max-width: 75em) { #bgIndex { padding: 2rem 0.8rem; background: url("imgs/index-bg.png") no-repeat 50% 45%; background-size: cover; }
+  #bgProject1 { background: url("imgs/daretostream-bg.jpg") no-repeat 50% 45%; background-size: cover; }
+  #bgProject2 { padding: 10em; }
+>>>>>>> master
   .blurb { margin-left: 0; width: 83%; } }
 /* ~992px */
 @media only screen and (max-width: 62em) { .meta-style, .meta { max-width: 100%; } }
@@ -157,6 +233,7 @@ figure:hover figcaption { visibility: visible; }
 @media only screen and (max-width: 48em) { #top, #bottom, #right, #left { visibility: hidden; }
   footer { width: 100%; }
   section { width: 90%; }
+<<<<<<< HEAD
   h1 { font-size: 2.5em !important; }
   nav { margin-right: 1.5rem; }
   a.navLink { margin-right: 0.7rem; }
@@ -168,3 +245,19 @@ figure:hover figcaption { visibility: visible; }
   .process-imgs { padding: 1em; }
   .img-caption { margin: 0; top: 0; }
   #heading-2lend { margin-left: 6rem; } }
+=======
+  h1 { margin: 0 !important; font-size: 0.85rem !important; width: 70%; }
+  p { margin-top: 1rem; }
+  nav { font-size: 0.85rem; }
+  a.navLink:first-of-type, a.navLink:nth-of-type(2) { margin-right: 0.7rem; }
+  .logo h4 { font-size: 1rem; }
+  #bgProject1 { padding: 6rem; }
+  #bgProject2 { padding: 8em; }
+  .heading { padding-left: 1rem; font-size: 0.9rem !important; }
+  .form { margin-top: -0.5rem; }
+  .contact-blurb { margin-top: 4rem; }
+  .project { margin-bottom: 2rem; }
+  .project-description, .meta-style, .meta, .process-wrapper { max-width: 100%; }
+  .process-imgs { padding: 1em; }
+  .img-caption { margin: 0; top: 0; } }
+>>>>>>> master

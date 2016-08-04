@@ -24,7 +24,12 @@ $regular-font: WorkSans-Regular, sans-serif;
 $primary-color: #EFC1B4;
 $body-color: #606060;
 $accent-color: #627ABE;
+<<<<<<< HEAD
 $white-color: #fff;
+=======
+$accent-hover: rgba(98, 122, 190, 0.9);
+$hover-text-color: #fff;
+>>>>>>> master
 
 * {
   margin: 0 auto;
@@ -58,9 +63,8 @@ section h2 {
 
 h1 {
   font: 100% $bold-font !important; 
-  font-size: 2rem !important;
+  font-size: 1.2rem !important;
   text-transform: uppercase;
-  text-align: justify;
   letter-spacing: 0.25rem;
 }
 
@@ -70,7 +74,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
+}
+
+h4 {
+  font-size: 0.9rem !important;
 }
 
 p {
@@ -133,7 +141,11 @@ a.navLink:hover {
 
 .logo, h4 {
   font: 100% $bold-font !important;
+<<<<<<< HEAD
   font-size: 0.5em;
+=======
+  font-size: 0.25em;
+>>>>>>> master
   letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
@@ -153,9 +165,13 @@ a.navLink:hover {
   max-width: 42%;
 }
 
+#welcome {
+  border-right: 1px solid $body-color;
+}
+
 #bgIndex {
-  padding: 5em;
-  background: url('imgs/index-bg.png') no-repeat 50% 75%;
+  padding: 2em;
+  background: url('imgs/index-bg-2.png') no-repeat 50% 45%;
   background-size: cover;
 }
 
@@ -183,7 +199,6 @@ a.navLink:hover {
 
 #work, #about {
   margin: 0 auto;
-  margin-top: 10%;
   margin-bottom: 7%;
   /*background-color: #eee;*/
 }
@@ -194,7 +209,7 @@ a.navLink:hover {
 
 .wrapper {
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   max-width: 90%;
   color: $body-color;
 }
@@ -243,6 +258,7 @@ http://codepen.io/uplusion23/pen/xOJkjE
 textarea {
   outline: none !important;
   resize: none !important;
+  margin-top: 4rem;
 }
 
 input, textarea {
@@ -269,7 +285,7 @@ label {
   font-weight: normal;
   position: absolute;
   left: 0rem;
-  top: 2rem;
+  top: 0.5rem;
   opacity: 0.5;
    -moz-transition: 0.2s ease all; 
   -webkit-transition: 0.2s ease all;
@@ -279,15 +295,12 @@ label {
 /* active state */
 input:focus ~ label, 
 textarea:focus ~ label {
-  top: -1rem;
+  top: -2rem;
   font-size: 1rem;
   color: #B1B1B1;
   opacity: 1;
 }
 
-textarea:focus ~ label {
-  top: -2rem !important;
-}
 
 
 .send-btn {
@@ -371,7 +384,6 @@ figure:hover figcaption {
 .tint {
   position: relative;
   cursor: pointer;
-  /*box-shadow: rgba(0,0,0,.2) 3px 3px 5px;*/
 }
 
 .tint:before {
@@ -387,18 +399,33 @@ figure:hover figcaption {
 }
 
 .tint:hover:before { 
-  background: rgba(80, 154, 186, 0.87); 
+  background: $accent-hover;
 }
 
 
 
-/* PROJECTS
+/* PROJECT PAGES
 --------------------------------------------*/
 
+<<<<<<< HEAD
 .meta-style {
   margin: 0;
   margin-top: 2.5rem;
   width: 90%;
+=======
+
+.blurb {
+  line-height: 1.9rem;
+  width: 90%;
+  margin-left: 0;
+  margin-bottom: 2em;
+}
+
+.meta-style {
+  margin: 0;
+  margin-top: 2rem;
+  width: 100%;
+>>>>>>> master
 }
 
 .meta-p {
@@ -406,7 +433,7 @@ figure:hover figcaption {
 }
 
 .process-wrapper {
-  margin-top: 2rem;
+  margin: 2.5rem 0;
   max-width: 75%;
   line-height: 1.8em;
 }
@@ -431,28 +458,48 @@ figure:hover figcaption {
   padding-bottom: 0.5rem;
 }
 
+.process-wrapper h3 {
+  margin: 2rem 0 !important;
+}
+
+.bg-heading {
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 22%;
+  color: #fff;
+  font: 100% $regular-font !important;
+  font-size: 2rem !important;
+}
+
 
 /* MEDIA QUERIES
 --------------------------------------------*/
 
 /* ~1200px */
 @media only screen and (max-width: 75em) {
-   /*#bgIndex { 
-    padding: 5em;
-  }*/ 
+
+  #bgIndex { 
+    padding: 2rem 0.8rem;
+    background: url('imgs/index-bg.png') no-repeat 50% 45%;
+    background-size: cover;
+  } 
 
   #bgProject1 {
-    padding: 10em;
+    background: url('imgs/daretostream-bg.jpg') no-repeat 50% 45%;
+    background-size: cover;
   }
 
   #bgProject2 {
     padding: 10em;
   }
 
+<<<<<<< HEAD
   nav {
     margin-right: 1rem;
   }
 
+=======
+>>>>>>> master
   .blurb {
     margin-left: 0;
     width: 83%;
@@ -483,14 +530,20 @@ figure:hover figcaption {
   }
 
   h1 {
-    font-size: 2.5em !important;
+    margin: 0 !important;
+    font-size: 0.85rem !important;
+    width: 70%;
+  }
+
+  p {
+    margin-top: 1rem;
   }
 
   nav {
-    margin-right: 1.5rem;
+    font-size: 0.85rem;
   }
 
-  a.navLink{
+  a.navLink:first-of-type, a.navLink:nth-of-type(2) {
     margin-right: 0.7rem;
   }
 
@@ -499,13 +552,30 @@ figure:hover figcaption {
    }
 
   #bgProject1 {
+<<<<<<< HEAD
     background: url('imgs/daretostream-bg.jpg') no-repeat 50% 40%;
     background-size: cover;
     padding: 8em;
+=======
+    padding: 6rem;
+>>>>>>> master
   }
 
   #bgProject2 {
     padding: 8em;
+  }
+
+  .heading {
+    padding-left: 1rem;
+    font-size: 0.9rem !important;
+  }
+
+  .form {
+    margin-top: -0.5rem; 
+  }
+
+  .contact-blurb {
+    margin-top: 4rem;
   }
 
   .project {
@@ -525,8 +595,5 @@ figure:hover figcaption {
     top: 0;
   }
 
-  #heading-2lend {
-    margin-left: 6rem;
-  }
 
 }
