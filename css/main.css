@@ -12,11 +12,11 @@ section { display: block; max-width: 100%; }
 
 section h2 { margin-bottom: 1em; }
 
-h1 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 2rem !important; text-transform: uppercase; text-align: justify; letter-spacing: 0.25rem; }
+h1 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 1.2rem !important; text-transform: uppercase; text-align: justify; letter-spacing: 0.25rem; }
 
 h2 { font: 100% WorkSans-Bold, sans-serif !important; text-transform: uppercase; font-size: 1.2em; color: #EFC1B4; }
 
-h3 { font-size: 1.2rem !important; }
+h3 { font-size: 1rem !important; }
 
 h4 { font-size: 0.9rem !important; }
 
@@ -52,6 +52,8 @@ a.navLink:hover { text-decoration: underline !important; }
 
 .intro-img { max-width: 42%; }
 
+#welcome { border-right: 1px solid #606060; }
+
 #bgIndex { padding: 2em; background: url("imgs/index-bg-2.png") no-repeat 50% 45%; background-size: cover; }
 
 #bgProject1 { padding: 15em; background: url("imgs/daretostream-bg1.jpg") no-repeat 50% 40%; background-size: cover; }
@@ -85,18 +87,16 @@ http://codepen.io/uplusion23/pen/xOJkjE
 --------------------------------------------*/
 .group { position: relative; margin-bottom: 4rem; }
 
-textarea { outline: none !important; resize: none !important; }
+textarea { outline: none !important; resize: none !important; margin-top: 4rem; }
 
 input, textarea { padding-top: 2rem; display: block; width: 90%; border: none; outline: none; border-bottom: 1px solid #606060; color: #606060; background: transparent; opacity: 0.5; transition: 0.2s ease; }
 
 input:focus, textarea:focus { outline: none; opacity: 1; }
 
-label { color: #606060; font-size: 1rem; font-weight: normal; position: absolute; left: 0rem; top: 2rem; opacity: 0.5; transition: 0.2s ease all; }
+label { color: #606060; font-size: 1rem; font-weight: normal; position: absolute; left: 0rem; top: 0.5rem; opacity: 0.5; transition: 0.2s ease all; }
 
 /* active state */
-input:focus ~ label, textarea:focus ~ label { top: -1rem; font-size: 1rem; color: #B1B1B1; opacity: 1; }
-
-textarea:focus ~ label { top: -2rem !important; }
+input:focus ~ label, textarea:focus ~ label { top: -2rem; font-size: 1rem; color: #B1B1B1; opacity: 1; }
 
 .send-btn { font: 100% WorkSans-Bold, sans-serif; color: #627ABE !important; text-transform: uppercase; letter-spacing: .25rem; border: 1px solid; padding: 1rem 2rem; }
 
@@ -130,7 +130,7 @@ figure:hover figcaption { visibility: visible; }
 
 .tint:hover:before { background: rgba(98, 122, 190, 0.9); }
 
-/* PROJECTS
+/* PROJECT PAGES
 --------------------------------------------*/
 .blurb { line-height: 1.9rem; width: 90%; margin-left: 0; margin-bottom: 2em; }
 
@@ -148,7 +148,7 @@ figure:hover figcaption { visibility: visible; }
 
 .process-wrapper h3 { margin: 2rem 0 !important; }
 
-.bg-heading { position: absolute; margin: 0 auto; margin-left: 19%; color: #fff; font: 100% WorkSans-Regular, sans-serif !important; font-size: 2rem !important; }
+.bg-heading { position: absolute; margin: 0 auto; margin-left: 22%; color: #fff; font: 100% WorkSans-Regular, sans-serif !important; font-size: 2rem !important; }
 
 /* MEDIA QUERIES
 --------------------------------------------*/

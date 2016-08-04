@@ -59,7 +59,7 @@ section h2 {
 
 h1 {
   font: 100% $bold-font !important; 
-  font-size: 2rem !important;
+  font-size: 1.2rem !important;
   text-transform: uppercase;
   text-align: justify;
   letter-spacing: 0.25rem;
@@ -73,7 +73,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
 }
 
 h4 {
@@ -158,6 +158,10 @@ a.navLink:hover {
 
 .intro-img {
   max-width: 42%;
+}
+
+#welcome {
+  border-right: 1px solid $body-color;
 }
 
 #bgIndex {
@@ -249,6 +253,7 @@ http://codepen.io/uplusion23/pen/xOJkjE
 textarea {
   outline: none !important;
   resize: none !important;
+  margin-top: 4rem;
 }
 
 input, textarea {
@@ -275,7 +280,7 @@ label {
   font-weight: normal;
   position: absolute;
   left: 0rem;
-  top: 2rem;
+  top: 0.5rem;
   opacity: 0.5;
    -moz-transition: 0.2s ease all; 
   -webkit-transition: 0.2s ease all;
@@ -285,15 +290,12 @@ label {
 /* active state */
 input:focus ~ label, 
 textarea:focus ~ label {
-  top: -1rem;
+  top: -2rem;
   font-size: 1rem;
   color: #B1B1B1;
   opacity: 1;
 }
 
-textarea:focus ~ label {
-  top: -2rem !important;
-}
 
 
 .send-btn {
@@ -397,7 +399,7 @@ figure:hover figcaption {
 
 
 
-/* PROJECTS
+/* PROJECT PAGES
 --------------------------------------------*/
 
 
@@ -451,7 +453,7 @@ figure:hover figcaption {
 .bg-heading {
   position: absolute;
   margin: 0 auto;
-  margin-left: 19%;
+  margin-left: 22%;
   color: #fff;
   font: 100% $regular-font !important;
   font-size: 2rem !important;
