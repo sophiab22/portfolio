@@ -24,7 +24,7 @@ $bold-font: WorkSans-Bold, sans-serif;
 $regular-font: WorkSans-Regular, sans-serif;
 $primary-color: #EFC1B4;
 $body-color: #606060;
-$hover-color: #627ABE;
+$accent-color: #627ABE;
 $hover-text-color: #fff;
 
 * {
@@ -82,7 +82,7 @@ p {
 }
 
 p a {
-	color: $hover-color !important;
+	color: $accent-color !important;
 }
 
 p a:hover {
@@ -94,7 +94,7 @@ a {
 }
 
 a:hover {
-	color: $hover-color !important;
+	color: $accent-color !important;
 	text-decoration: none !important;
 }
 
@@ -222,7 +222,7 @@ a.navLink:hover {
 
 .project a:hover {
 	text-decoration: none;
-	/*color: $hover-color;*/
+	/*color: $accent-color;*/
 }
 
 .img-wrapper {
@@ -271,18 +271,17 @@ label {
   font-size: 1rem;
   font-weight: normal;
   position: absolute;
-  pointer-events: none;
   left: 0rem;
   top: 2rem;
   opacity: 0.5;
-  transition: 0.2s ease all; 
-  -moz-transition: 0.2s ease all; 
+   -moz-transition: 0.2s ease all; 
   -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all; 
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label, 
-textarea:focus ~ label, textarea:valid ~ label {
+input:focus ~ label, 
+textarea:focus ~ label {
   top: -1rem;
   font-size: 1rem;
   color: #B1B1B1;
@@ -296,7 +295,7 @@ textarea:focus ~ label {
 
 .send-btn {
 	font: 100% $bold-font;
-	color: $hover-color !important;
+	color: $accent-color !important;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 	border: 1px solid;
@@ -306,7 +305,7 @@ textarea:focus ~ label {
 
 .send-btn:hover {
 	text-decoration: none;
-	background-color: $hover-color !important;
+	background-color: $accent-color !important;
 	color: $hover-text-color !important;
 	-webkit-transition: background-color 0.9s;
 	transition: background-color 0.9s;
@@ -516,10 +515,6 @@ figure:hover figcaption {
 	.logo h4 {
 	 	font-size: 1.5rem ;
 	 }
-
-/*	#bgIndex {
-		padding: 5em;
-	}*/
 
 	#bgProject1 {
 		padding: 8em;

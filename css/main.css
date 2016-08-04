@@ -201,7 +201,7 @@ a.navLink:hover {
 
 .project a:hover {
   text-decoration: none;
-  /*color: $hover-color;*/
+  /*color: $accent-color;*/
 }
 
 .img-wrapper {
@@ -248,18 +248,17 @@ label {
   font-size: 1rem;
   font-weight: normal;
   position: absolute;
-  pointer-events: none;
   left: 0rem;
   top: 2rem;
   opacity: 0.5;
-  transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label,
-textarea:focus ~ label, textarea:valid ~ label {
+input:focus ~ label,
+textarea:focus ~ label {
   top: -1rem;
   font-size: 1rem;
   color: #B1B1B1;
@@ -474,9 +473,6 @@ figure:hover figcaption {
   .logo h4 {
     font-size: 1.5rem;
   }
-  /*	#bgIndex {
-		padding: 5em;
-	}*/
   #bgProject1 {
     padding: 8em;
   }
