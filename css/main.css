@@ -12,7 +12,7 @@ section { display: block; max-width: 100%; }
 
 section h2 { margin-bottom: 1em; }
 
-h1 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 1.2rem !important; text-transform: uppercase; text-align: justify; letter-spacing: 0.25rem; }
+h1 { font: 100% WorkSans-Bold, sans-serif !important; font-size: 1.2rem !important; text-transform: uppercase; letter-spacing: 0.25rem; }
 
 h2 { font: 100% WorkSans-Bold, sans-serif !important; text-transform: uppercase; font-size: 1.2em; color: #EFC1B4; }
 
@@ -153,7 +153,7 @@ figure:hover figcaption { visibility: visible; }
 /* MEDIA QUERIES
 --------------------------------------------*/
 /* ~1200px */
-@media only screen and (max-width: 75em) { #bgIndex { padding: 5rem; background: url("imgs/index-bg.png") no-repeat 50% 45%; background-size: cover; }
+@media only screen and (max-width: 75em) { #bgIndex { padding: 2rem 0.8rem; background: url("imgs/index-bg.png") no-repeat 50% 45%; background-size: cover; }
   #bgProject1 { background: url("imgs/daretostream-bg.jpg") no-repeat 50% 45%; background-size: cover; }
   #bgProject2 { padding: 10em; }
   .blurb { margin-left: 0; width: 83%; } }
@@ -163,7 +163,8 @@ figure:hover figcaption { visibility: visible; }
 @media only screen and (max-width: 48em) { #top, #bottom, #right, #left { visibility: hidden; }
   footer { width: 100%; }
   section { width: 90%; }
-  h1 { font-size: 2.5em !important; }
+  h1 { margin: 0 !important; font-size: 0.85rem !important; width: 70%; }
+  p { margin-top: 1rem; }
   nav { font-size: 0.85rem; }
   a.navLink:first-of-type, a.navLink:nth-of-type(2) { margin-right: 0.7rem; }
   .logo h4 { font-size: 1rem; }
