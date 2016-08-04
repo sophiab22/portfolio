@@ -66,6 +66,7 @@ h1 {
 h2 { 
   font: 100% $bold-font !important;
   text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 h3 {
@@ -85,10 +86,12 @@ p {
 
 p a {
   color: $accent-color !important;
+  text-decoration: underline;
 }
 
 p a:hover {
-  text-decoration: underline !important;
+  color: $primary-color !important;
+
 }
 
 a {
@@ -103,6 +106,18 @@ a:hover {
 strong {
   font: 100% $bold-font !important; 
   text-transform: uppercase;
+}
+
+ol {
+  line-height: 2rem;
+}
+
+blockquote {
+  display: block;
+  font-style: italic;
+  font-size: 0.95em;
+  border-left: 10px solid $accent-color !important;
+  margin: 2em 0em;
 }
 
 /* FOOTER
@@ -200,6 +215,10 @@ a.navLink:hover {
   margin: 0 auto;
   margin-bottom: 7%;
   /*background-color: #eee;*/
+}
+
+#about-wrapper {
+  margin-top: 1.5rem;
 }
 
 .wrapper {
@@ -406,12 +425,6 @@ figure:hover figcaption {
 
 /* PROJECT PAGES (project1/2/3.html)
 --------------------------------------------*/
-
-.meta-style {
-  margin: 0;
-  margin-top: 2.5rem;
-  width: 90%;
-}
 
 .meta-style {
   margin: 0;
