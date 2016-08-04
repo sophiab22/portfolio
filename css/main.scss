@@ -24,6 +24,7 @@ $regular-font: WorkSans-Regular, sans-serif;
 $primary-color: #EFC1B4;
 $body-color: #606060;
 $accent-color: #627ABE;
+$accent-hover: rgba(98, 122, 190, 0.9);
 $hover-text-color: #fff;
 
 * {
@@ -73,6 +74,10 @@ h2 {
 
 h3 {
   font-size: 1.2rem !important;
+}
+
+h4 {
+  font-size: 0.9rem !important;
 }
 
 p {
@@ -133,9 +138,9 @@ a.navLink:hover {
   text-decoration: underline !important;
 }
 
-.logo {
-  font: 100% $bold-font;
-  font-size: 0.5em;
+.logo, h4 {
+  font: 100% $bold-font !important;
+  font-size: 0.25em;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
@@ -156,8 +161,8 @@ a.navLink:hover {
 }
 
 #bgIndex {
-  padding: 5em;
-  background: url('imgs/index-bg.png') no-repeat 50% 75%;
+  padding: 2em;
+  background: url('imgs/index-bg-2.png') no-repeat 50% 45%;
   background-size: cover;
 }
 
@@ -168,24 +173,23 @@ a.navLink:hover {
 }
 
 #bgProject2 {
+  padding: 15em;
+  background: url('imgs/boo-bg.png') no-repeat 50% 30%;
+  background-size: cover;
+}
+
+#bgProject3 {
   padding: 11em;
   background: url('imgs/2lend-bg2.png') no-repeat 50% 25%;
   background-size: cover;
 }
 
-/*.content {
-  margin: 0 auto;
-  text-align: left;
-  margin-top: 3rem;
-}
-*/
 
 /* WORK + ABOUT SECTIONS (index.html)
 --------------------------------------------*/
 
 #work, #about {
   margin: 0 auto;
-  margin-top: 10%;
   margin-bottom: 7%;
   /*background-color: #eee;*/
 }
@@ -196,7 +200,7 @@ a.navLink:hover {
 
 .wrapper {
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   max-width: 90%;
   color: $body-color;
 }
@@ -206,7 +210,7 @@ a.navLink:hover {
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25rem;
-  padding-left: 2rem;
+  padding: 0.25rem 2rem;
 }
 
 .project {
@@ -373,7 +377,6 @@ figure:hover figcaption {
 .tint {
   position: relative;
   cursor: pointer;
-  /*box-shadow: rgba(0,0,0,.2) 3px 3px 5px;*/
 }
 
 .tint:before {
@@ -389,7 +392,7 @@ figure:hover figcaption {
 }
 
 .tint:hover:before { 
-  background: rgba(80, 154, 186, 0.87); 
+  background: $accent-hover;
 }
 
 
@@ -397,9 +400,6 @@ figure:hover figcaption {
 /* PROJECTS
 --------------------------------------------*/
 
-#heading-2lend {
-  color: #fff;
-}
 
 .blurb {
   line-height: 1.9rem;
@@ -411,7 +411,7 @@ figure:hover figcaption {
 .meta-style {
   margin: 0;
   margin-top: 2rem;
-  width: 70%;
+  width: 100%;
 }
 
 .meta-p {
@@ -419,7 +419,7 @@ figure:hover figcaption {
 }
 
 .process-wrapper {
-  margin-top: 2rem;
+  margin: 2.5rem 0;
   max-width: 75%;
   line-height: 1.8em;
 }
@@ -444,30 +444,39 @@ figure:hover figcaption {
   padding-bottom: 0.5rem;
 }
 
+.process-wrapper h3 {
+  margin: 2rem 0 !important;
+}
+
+.bg-heading {
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 19%;
+  color: #fff;
+  font: 100% $regular-font !important;
+  font-size: 2rem !important;
+}
+
 
 /* MEDIA QUERIES
 --------------------------------------------*/
 
 /* ~1200px */
 @media only screen and (max-width: 75em) {
-   /*#bgIndex { 
-    padding: 5em;
-  }*/ 
+
+  #bgIndex { 
+    padding: 5rem;
+    background: url('imgs/index-bg.png') no-repeat 50% 45%;
+    background-size: cover;
+  } 
 
   #bgProject1 {
-    padding: 10em;
+    background: url('imgs/daretostream-bg.jpg') no-repeat 50% 45%;
+    background-size: cover;
   }
 
   #bgProject2 {
     padding: 10em;
-  }
-
-  .logo {
-    margin-left: 3.2rem;
-  }
-
-  nav {
-    margin-right: 1rem;
   }
 
   .blurb {
@@ -504,27 +513,36 @@ figure:hover figcaption {
   }
 
   nav {
-    margin-right: 1.5rem;
+    font-size: 0.85rem;
   }
 
-  a.navLink{
+  a.navLink:first-of-type, a.navLink:nth-of-type(2) {
     margin-right: 0.7rem;
   }
 
-  .logo { 
-    margin-left: 2rem;
-   }
-
   .logo h4 {
-    font-size: 1.5rem ;
+    font-size: 1rem ;
    }
 
   #bgProject1 {
-    padding: 8em;
+    padding: 6rem;
   }
 
   #bgProject2 {
     padding: 8em;
+  }
+
+  .heading {
+    padding-left: 1rem;
+    font-size: 0.9rem !important;
+  }
+
+  .form {
+    margin-top: -0.5rem; 
+  }
+
+  .contact-blurb {
+    margin-top: 4rem;
   }
 
   .project {
@@ -544,8 +562,5 @@ figure:hover figcaption {
     top: 0;
   }
 
-  #heading-2lend {
-    margin-left: 6rem;
-  }
 
 }
