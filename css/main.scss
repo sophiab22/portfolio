@@ -40,13 +40,11 @@ html, body {
 }
   
 footer {
-  margin-top: 10rem;
-  margin-bottom: 6rem;
-  padding: 1.5rem;
   background-color: $body-color;
   color: $white-color;
+  margin-top: 4rem;
+  padding: 2rem;
   text-align: center;
-  /*margin: 0 auto -1rem;  the bottom margin is the negative value of the footer's height */
 }
 
 section {
@@ -107,6 +105,15 @@ strong {
   text-transform: uppercase;
 }
 
+/* FOOTER
+--------------------------------------------*/
+
+footer a {
+  list-style-type: none;
+  color: $white-color !important;
+  display: inline-block;
+}
+
 /* HEADER + NAVIGATION
 --------------------------------------------*/
 
@@ -151,7 +158,6 @@ a.navLink:hover {
   margin: 0 auto;
   height: 15rem;
   width: 100%;
-  /*background-color: #B0DEDC;*/
 }
 
 .intro-img {
@@ -196,15 +202,16 @@ a.navLink:hover {
   /*background-color: #eee;*/
 }
 
-#about-wrapper {
-  margin-top: 2rem;
-}
-
 .wrapper {
   margin-top: 10%;
   margin-bottom: 3%;
   max-width: 90%;
   color: $body-color;
+}
+
+
+#contact .wrapper {
+  margin-top: 5%;
 }
 
 .heading {
@@ -456,6 +463,7 @@ figure:hover figcaption {
 }
 
 
+
 /* MEDIA QUERIES
 --------------------------------------------*/
 
@@ -554,7 +562,7 @@ figure:hover figcaption {
   }
 
   .form {
-    margin-top: -0.5rem; 
+    /*margin-top: -0.5rem; */
   }
 
   .project {
