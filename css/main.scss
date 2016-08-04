@@ -24,12 +24,8 @@ $regular-font: WorkSans-Regular, sans-serif;
 $primary-color: #EFC1B4;
 $body-color: #606060;
 $accent-color: #627ABE;
-<<<<<<< HEAD
-$white-color: #fff;
-=======
 $accent-hover: rgba(98, 122, 190, 0.9);
 $hover-text-color: #fff;
->>>>>>> master
 
 * {
   margin: 0 auto;
@@ -71,6 +67,8 @@ h1 {
 h2 { 
   font: 100% $bold-font !important;
   text-transform: uppercase;
+  font-size: 1.2em;
+  color: $primary-color;
 }
 
 h3 {
@@ -115,7 +113,7 @@ strong {
 
 header { 
   width: 100%;
-  color: $primary-color;
+  /*background-color: $primary-color;*/
 
 }
 
@@ -141,11 +139,7 @@ a.navLink:hover {
 
 .logo, h4 {
   font: 100% $bold-font !important;
-<<<<<<< HEAD
-  font-size: 0.5em;
-=======
   font-size: 0.25em;
->>>>>>> master
   letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
@@ -217,7 +211,7 @@ a.navLink:hover {
 .heading {
   background-color: $primary-color;
   text-transform: uppercase;
-  color: #fff !important;
+  color: #fff;
   letter-spacing: 0.25rem;
   padding: 0.25rem 2rem;
 }
@@ -245,7 +239,6 @@ a.navLink:hover {
 
 
 /* CONTACT SECTION (index.html)
-
 Code adapted from Trevor L.J.M. MacIntire:
 http://codepen.io/uplusion23/pen/xOJkjE
 --------------------------------------------*/
@@ -316,7 +309,7 @@ textarea:focus ~ label {
 .send-btn:hover {
   text-decoration: none;
   background-color: $accent-color !important;
-  color: $white-color !important;
+  color: $hover-text-color !important;
   -webkit-transition: background-color 0.9s;
   transition: background-color 0.9s;
 }
@@ -407,12 +400,6 @@ figure:hover figcaption {
 /* PROJECT PAGES
 --------------------------------------------*/
 
-<<<<<<< HEAD
-.meta-style {
-  margin: 0;
-  margin-top: 2.5rem;
-  width: 90%;
-=======
 
 .blurb {
   line-height: 1.9rem;
@@ -425,7 +412,6 @@ figure:hover figcaption {
   margin: 0;
   margin-top: 2rem;
   width: 100%;
->>>>>>> master
 }
 
 .meta-p {
@@ -493,13 +479,6 @@ figure:hover figcaption {
     padding: 10em;
   }
 
-<<<<<<< HEAD
-  nav {
-    margin-right: 1rem;
-  }
-
-=======
->>>>>>> master
   .blurb {
     margin-left: 0;
     width: 83%;
@@ -552,13 +531,7 @@ figure:hover figcaption {
    }
 
   #bgProject1 {
-<<<<<<< HEAD
-    background: url('imgs/daretostream-bg.jpg') no-repeat 50% 40%;
-    background-size: cover;
-    padding: 8em;
-=======
     padding: 6rem;
->>>>>>> master
   }
 
   #bgProject2 {
