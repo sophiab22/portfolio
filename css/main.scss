@@ -172,6 +172,7 @@ a.navLink:hover {
   margin-top: 1.5rem; }
 
 .wrapper {
+margin: 0 auto;
   margin-top: 10%;
   margin-bottom: 3%;
   max-width: 90%;
@@ -300,6 +301,11 @@ ul {
 
 /* IMAGES (index.html)
 --------------------------------------------*/
+
+.project {
+margin: 0 auto;
+}
+
 img {
   max-width: 100%; }
 
@@ -355,10 +361,11 @@ figure:hover figcaption {
   margin-bottom: 2rem;
 }
 
-.process-imgs {
+.process-imgs {	
 margin: 0 auto;
   padding: 2rem; 
-  width: 60%; }
+  width: 80%;
+}
 
 .img-caption {
   visibility: visible;
